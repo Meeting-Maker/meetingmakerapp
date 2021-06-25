@@ -34,13 +34,15 @@ const Home = ({ navigation }) => {
 
 export default Home;
 
+
 const PrivacyText = styled.Text`
     position: absolute; 
     bottom: 40px;
     padding-right: 100px;
     padding-left: 100px;
     text-align: center;
-    color: #AAAAAA;
+    color: #9A9A9D;
+    font-weight: bold;
     
 `;
 const MeetingMakerText = styled.Text`

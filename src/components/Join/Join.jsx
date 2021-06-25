@@ -7,7 +7,6 @@ const Join = ({ navigation }) => {
 
   return (
     <>
-
       <BackArrow navigation={navigation}/>
       
       <TextInputView>
@@ -53,7 +52,6 @@ const TextInput = styled.TextInput`
 `;
 
 const TextInputView = styled.View`
-  background-color: white;
   flex: 1; /* takes up whole screen */
   justify-content: center; /* horizontally centers */
   align-items: center; /* verticall centers */
