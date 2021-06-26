@@ -36,13 +36,15 @@ export default Home;
 
 
 const PrivacyText = styled.Text`
-    position: absolute; 
+    position: absolute;
     bottom: 40px;
-    padding-right: 50px;
-    padding-left: 50px;
     text-align: center;
     color: #9A9A9D;
     font-weight: bold;
+    padding-right: 60px;
+    padding-left: 60px;
+    
+    
     
 `;
 const MeetingMakerText = styled.Text`
