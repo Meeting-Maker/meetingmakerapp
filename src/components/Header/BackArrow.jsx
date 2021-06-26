@@ -25,12 +25,11 @@ export default BackArrow;
 
 const HeaderView = styled.View`
   justify-content: center;
-  background-color: white;
+  
   align-items: flex-start;
   padding-top: 50px;
 `;
 
 const BackButton = styled.Pressable`
-  background-color: white;
   margin-left: 12px;
 `;

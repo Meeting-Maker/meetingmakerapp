@@ -10,7 +10,7 @@ const MyTheme = {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      background: 'white'
+      background: '#F8F8F8'
     },
   };
 

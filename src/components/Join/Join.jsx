@@ -11,7 +11,7 @@ const Join = ({ navigation }) => {
       
       <TextInputView>
         <EnterACodeText>enter a code 🔐</EnterACodeText>
-        <TextInputBox source={require('./CodeTextBox.png')}> 
+        <TextInputBox source={require('./CodeTextBoxWhite.png')}> 
         <TextInput
           returnKeyType="go"
           autoCorrect={false}
@@ -31,12 +31,13 @@ export default Join;
 const EnterACodeText = styled.Text`
   font-weight: 800;
   font-size: 24px;
-  position:absolute;
-  top: 110px;
+  position:relative;
+  bottom: 30px;
+ 
 `;
 const TextInputBox = styled.ImageBackground`
- width: 375px;
- height: 225px;
+ width: 326px;
+ height: 92px;
  justify-content: center;
  align-items: center;
  
@@ -45,10 +46,10 @@ const TextInputBox = styled.ImageBackground`
 const TextInput = styled.TextInput`  
   justify-content: center;
   align-items: center;
-  margin-bottom: 105px;
+  margin-bottom: 17px;
   text-align: center;
   font-weight: 900; /* super bold */
-  font-size: 24px;
+  font-size: 26px;
 `;
 
 const TextInputView = styled.View`

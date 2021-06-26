@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import BackArrow from "../Header/BackArrow";
-import { Button, View } from "react-native";
+import { Button, TextInput, View } from "react-native";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 const Schedule = ({ navigation }) => {
@@ -25,7 +25,7 @@ const Schedule = ({ navigation }) => {
     <>
       <BackArrow navigation={navigation} />
       <View>
-      <Button title="Show Date Picker" onPress={showDatePicker} />
+      
       <DateTimePickerModal
         isVisible={isDatePickerVisible}
         mode="datetime"
@@ -33,19 +33,50 @@ const Schedule = ({ navigation }) => {
         onCancel={hideDatePicker}
       />
       </View>
-      
+        <Container> 
+        <PickDateText>Pick a couple dates 🗓</PickDateText>
+        <Block><Center title="+" onPress={showDatePicker}/></Block>
+        <Block/>
+      </Container>
+
     </>
+    
   );
 };
 
 export default Schedule;
 
+const PickDateText = styled.Text`
+  font-weight: 800;
+  font-size: 24px;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 0px;
+  right: 0px;
+  
+`;
 const Container = styled.View`
   flex: 1; /* takes up whole screen */
-  justify-content: center; /* horizontally centers */
-  align-items: center; /* verticall centers */
+  justify-content: space-evenly; 
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 150px;
 `;
-
-const TextI = styled.Text`
-  font-size: 30px;
+const Center = styled.Button`  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900; /* super bold */
+  font-size: 26px;
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+`;
+const Block = styled.View`
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  justify-content: center;
+ align-items: center;
 `;
